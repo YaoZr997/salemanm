@@ -1,0 +1,26 @@
+﻿.cardListC{margin-top: 10px; border-top: 1px solid #ddd;}
+.cardList>li{padding: 10px 0; border-bottom: 1px solid #ddd; position: relative;}
+.cardList>li:last-child{border: 0; padding-bottom: 0;}
+.cardList>li>h1{line-height: 16px; font-size: 14px;}
+.cardList>li>h1>em{height: 16px; width: 8px; border-radius: 4px; -webkit-border-radius: 4px; margin-right: 10px; display: inline-block; background-color: #e8512e; float: left;}
+.cardList>li>h1>span{display: inline-block; float: right; padding-left: 20px; background: url(../images/wo-clock.png) no-repeat left center; color: #777; font-size: 12px; background-size: 16px 16px;}
+.gridChannel{margin-top: 10px;}
+.gridChannel>li{position: relative;padding-left: 16px; padding-right: 80px; margin-bottom: 15px; pad}
+.gridChannel>li>em{display:inline-block; position: absolute; height: 100%; width: 6px; border-radius: 3px; -webkit-border-radius: 3px; top: 0; left: 0;background-color:#3da0b9;}
+.gridChannel>li>p{color: #999; padding: 2px 0;}
+.gridChannel>li:last-child{margin-bottom: 0;}
+.gridChannel>li>p.channelM{font-size: 16px; color: #555;}
+.gridInfo{margin-top:10px; padding:5px 10px; line-height:18px; background-color:#f8f8f8; position: relative; overflow: hidden;}
+.channelMamage{border: 1px solid #3da0b9; color: #3da0b9; padding: 5px; line-height: 18px; position: absolute; top: 50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); right: 0; border-radius: 5px; -webkit-border-radius: 5px;}
+.channelMamage:hover{color: #fff; background-color: #3da0b9;;}
+.channelMamage>span{font-size: 16px;padding: 0 5px;}
+
+.woStoreUser{padding-top: 10px; overflow: hidden;}
+.woStoreUser p{text-align: center;padding: 3px 0; color: #999; font-size: 14px; line-height: 16px;}
+.woStoreUser p.number{color: #d72323;}
+.woStoreUser p.number>span{font-size: 18px;}
+.woStoreDone,.woStoreBuild{width: 100px; height: 20px; line-height: 20px; color: #fff; background-color: #39c296; text-align: center; position: absolute; transform:rotate(-45deg); -webkit-transform:rotate(-45deg); right: -25px; bottom: 15px;}
+.woStoreBuild{background-color: #ee7262;}
+
+.mission{padding: 15px 10px;}
+.missionStatus{padding-right: 60px; position: relative;}

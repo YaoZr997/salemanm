@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/point.css">
+<style type="text/css">
+.serObjList>li{border:0;}
+.serObj{background-color: #f8f8f8;margin: 0 -15px;padding: 0 10px;}
+.serObj>a{padding: 5px 0;line-height: 32px;}
+.serObj>a>span{float: right;display: inline-block;color: #fff;background-color: #e45889;font-size: 12px;padding: 0 5px;border-radius: 10px;-webkit-border-radius: 10px;line-height: 20px;margin-right: 15px;margin-top: 6px;}
+.serObjPoint{border:0;}
+.serObjPoint+.serObjPoint{border-top: 1px solid #ddd;margin-top: 10px;}
+</style>
+<title>楼栋列表</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">楼栋列表</div>
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="add fr">
+          <img src="images/add.png" height="24" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="container marginT">
+      <ul class="serObjList">
+        <li>
+          <div class="pointWgSer">
+            <div class="serObj clearfix">
+              <a href="PointSerObjDet.html"><img src="images/estateBuilding.png" height="32" alt="" class="fl">1栋1单元101<span>将到期目标用户数：5</span></a>
+            </div>
+            <div class="serObjPoint clearfix">
+              <div class="col-xs-6 col-sm-6">
+                <div class="dataRow four"><span>单元数：</span>4</div>
+              </div>
+              <div class="col-xs-6 col-sm-6">
+                <div class="dataRow three"><span>户数：</span>48户</div>
+              </div>
+            </div>
+            <div class="serObjPoint clearfix">
+              <div class="col-xs-6 col-sm-6">
+                <div class="dataRow five"><span>本网用户：</span>15户</div>
+              </div>
+              <div class="col-xs-6 col-sm-6">
+                <div class="dataRow five"><span>异网用户：</span>20户</div>
+              </div>
+            </div>
+            <div class="serObjPoint clearfix">
+              <div class="dataRow five"><span>潜在用户：</span>13户</div>
+            </div>
+          </div>
+        </li> 
+      </ul>
+    </section>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

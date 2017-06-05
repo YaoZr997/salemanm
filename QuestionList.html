@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/question.css">
+<style type="text/css">
+  .questionList>li{padding: 15px;}
+  .questionerDetail{margin-top:15px;}
+  .questioner{top: 0;margin-top: 0;}
+  .searchC .form-control{background-color:#fbfbfb;height:28px; border-radius:17px; text-align:center;color: #999;}
+  .addToCollect{position: absolute;right: 0;top: 0;display: block;padding: 6px 10px;border:1px solid #cf1f2c;color: #cf1f2c;font-size: 12px;background-color: #fff;line-height: 12px;}
+  .qdOthers{margin-top: 0;}
+  .qdOthersOpe{margin-top: 5px;}
+  .addToCollect>span{font-size: 16px;font-weight: bold;}
+  .sendMsgC{padding:8px;background-color:#f5f5f5;padding-right: 50px;}
+  .sendMsgC .form-control{background-color:#fff;height:28px; border-radius:5px;-webkit-border-radius: 5px;color: #555;padding:0 5px;}
+  .btnSend{background-color: #e7512e;color: #fff;position: absolute;right: 5px;width: 40px;height: 28px;line-height: 28px;display: block;text-align: center;top: 8px;border-radius: 5px;-webkit-border-radius: 5px;}
+</style>
+<title>在线问答</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">在线问答</div>
+      <div class="col-xs-2"></div>
+    </header>
+    <section class="container marginT marginB">
+      <input type="text" id="input1">
+      <input type="text" id="input2">
+      <div class="questionListPage">
+        <div class="searchC" style="padding:8px;">
+          <input type="text" class="form-control" placeholder="搜索">
+          <a href="javascript:void(0)" class="search abs" style="right:8px; top:2px;z-index:99;">
+            <img src="images/searchDark.png" width="20" alt="">
+          </a>
+        </div>
+        <div class="menu_secondC">
+          <div class="menu_second">
+            <div class="col-xs-4 col-sm-4">
+              <img src="images/contacts-group.png" alt="" height="24">
+              <p>小组成员</p>
+            </div>
+            <div class="col-xs-4 col-sm-4">
+              <img src="images/contacts-department.png" alt="" height="24">
+              <p>部门成员</p>
+            </div>
+            <div class="col-xs-4 col-sm-4">
+              <img src="images/contacts-more.png" alt="" height="24">
+              <p>更多</p>
+            </div>
+          </div>
+        </div>
+        <div class="questionListC">
+          <ul class="questionList">
+            <li>
+              <i class="topTag"></i>
+              <div class="questionerDetailC">
+                <div class="questioner">
+                  <img src="images/questioner.png" width="60" alt="">
+                  <p>杨建阁</p>
+                </div>
+                <div class="questionerDetail">
+                  <h1>舟山市用户顾佳佳上报测网数据，事件类型：信号不稳定</h1>
+                  <p>顾佳佳的问题，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+                  <div class="qdOthers clearfix">
+                    <span class="fl">12月2日09.58</span>
+                  </div>
+                </div>
+              </div>
+              <div class="answererDetailC">
+                <div class="qdOthersOpe clearfix">
+                  <div class="col-xs-4 col-sm-4"><span>赞(7943)</span></div>
+                  <div class="col-xs-4 col-sm-4"><span>收藏(7943)</span></div>
+                  <div class="col-xs-4 col-sm-4"><span>评论(7943)</span></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <i class="topTag hotTag"></i>
+              <div class="questionerDetailC">
+                <div class="questioner">
+                  <img src="images/questioner.png" width="60" alt="">
+                  <p>杨建阁</p>
+                </div>
+                <div class="questionerDetail">
+                  <h1>舟山市用户顾佳佳上报测网数据，事件类型：信号不稳定</h1>
+                  <p>顾佳佳的问题，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+                  <div class="qdOthers clearfix">
+                    <span class="fl">12月2日09.58</span>
+                  </div>
+                </div>
+              </div>
+              <div class="answererDetailC">
+                <div class="qdOthersOpe clearfix">
+                  <div class="col-xs-4 col-sm-4"><span>赞(7943)</span></div>
+                  <div class="col-xs-4 col-sm-4"><span>收藏(7943)</span></div>
+                  <div class="col-xs-4 col-sm-4"><span>评论(7943)</span></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="questionerDetailC">
+                <div class="questioner">
+                  <img src="images/questioner.png" width="60" alt="">
+                  <p>杨建阁</p>
+                </div>
+                <div class="questionerDetail">
+                  <h1>舟山市用户顾佳佳上报测网数据，事件类型：信号不稳定</h1>
+                  <p>顾佳佳的问题，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+                  <div class="qdOthers clearfix">
+                    <span class="fl">12月2日09.58</span>
+                  </div>
+                </div>
+              </div>
+              <div class="answererDetailC">
+                <div class="qdOthersOpe clearfix">
+                  <div class="col-xs-4 col-sm-4"><span>赞(7943)</span></div>
+                  <div class="col-xs-4 col-sm-4"><span>收藏(7943)</span></div>
+                  <div class="col-xs-4 col-sm-4"><span>评论(7943)</span></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerNav">
+        <div class="col-xs-3 col-sm-3 cur">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon"></i>
+            <p>消息</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="PointWg.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-shouyi.png)"></i>
+            <p>收益</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="Rank.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-renwu.png)"></i>
+            <p>任务</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="More.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-more.png)"></i>
+            <p>更多</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  window.onload = function(){
+    var input1 = document.getElementById('input1'),
+        input2 = document.getElementById('input2');
+    input1.addEventLister('')
+  }
+    if(e.keyCode == 13){
+      alert(1);
+    }
+  })
+  $('#input2').keyup(function(e){
+    if(e.keyCode == 13){
+      alert(2);
+    }
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workOrder.css">
+<title>渠道资料信息</title>
+<style type="text/css">
+  .formWriteList>li>span{left: 15px;font-size: 14px;}
+  .formWriteList>li.six{padding-left: 6em;}
+  .formWriteList>li{min-height: 44px;}
+  .formWriteList>li>h1{font-size: 14px;padding: 10px 15px;}
+  .formContent{padding: 0px 15px 10px;overflow: hidden;}
+  .formWriteC textarea.form-control{border:1px solid #ddd; height: 72px; padding: 5px 10px;}
+  .handleResult{background-color: #ccc; color: #fff; border-radius: 5px; padding: 8px 0; text-align: center; width: 30%;margin-right: 5%; display: block; float: left; font-size: 14px;}
+  .handleResult.cur{background-color: #e7512e;}
+  .photoSelectC{border:1px solid #ddd; border-radius: 5px; width: 100px; height: 100px;float: left;margin:0 5px 10px;}
+  .photoSelect{margin: 0;text-align: center; color: #999;display: block; margin-top: 5px;}
+  .photoSelectC>input{width: 0;height: 0;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <!-- <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a> -->
+      </div>
+      <div class="col-xs-8">预览</div>
+      <div class="col-xs-2"></div>
+    </header>
+    <section class="container marginT">
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li class="six">
+            <span>店铺名称</span>
+            <div class="selector">
+              <input type="text" class="form-control" placeholder="店铺名称" value="店铺名称">
+              <select class="select form-control" name="" id="">
+                <option value="0" selected="">店铺名称</option>
+                <option value="0">店铺名称</option>
+                <option value="0">店铺名称</option>
+                <option value="0">店铺名称</option>
+                <option value="0">店铺名称</option>
+              </select>
+            </div>
+          </li>
+          <li class="six">
+            <span>联系人</span>
+            <input type="text" class="form-control" placeholder="请输入联系人">
+          </li>
+          <li class="six">
+            <span>联系电话</span>
+            <input type="text" class="form-control" placeholder="请输入联系电话">
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1>门头照片</h1>
+            <div class="formContent">
+              <div class="photoSelectC">
+                <label class="photoSelect">
+                  <div class="">
+                    
+                  </div>
+                </label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1>店铺照片</h1>
+            <div class="formContent">
+              <div class="photoSelectC">
+                <label class="photoSelect">
+                  
+                </label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1 style="line-height:44px;">地理位置<input type="text" class="form-control fr" style="width:60px;padding:0 5px;" placeholder="纬度"><input type="text" class="form-control fr" style="width:60px;padding:0 5px;" placeholder="经度"><img src="images/channelLoc.jpg" alt="" height="32" class="fr" style="margin:6px 5px 0 0;"></h1>
+            <div class="formContent">地图</div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li style="padding-left:8em;">
+            <span>本次拜访目的</span>
+            <div class="selector">
+              <input type="text" class="form-control" placeholder="本次拜访目的" value="本次拜访目的">
+              <select class="select form-control" name="" id="">
+                <option value="0" selected="">店铺名称</option>
+                <option value="0">店铺名称</option>
+                <option value="0">店铺名称</option>
+                <option value="0">店铺名称</option>
+                <option value="0">店铺名称</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <span>店员是否清楚公司重点推广业务</span>
+            <div class="slideThree fr">  
+              <input value="None" id="r1" name="check" checked="" type="checkbox">
+              <label for="r1"></label>
+            </div>
+          </li>
+          <li>
+            <span>店内宣传品是否摆放到位</span>
+            <div class="slideThree fr">  
+              <input value="None" id="r2" name="check" checked="" type="checkbox">
+              <label for="r2"></label>
+            </div>
+          </li>
+          <li>
+            <span>店员是否清楚公司佣金、激励政策</span>
+            <div class="slideThree fr">  
+              <input value="None" id="r3" name="check" checked="" type="checkbox">
+              <label for="r3"></label>
+            </div>
+          </li>
+          <li>
+            <span>店员仪容仪表是否符合要求</span>
+            <div class="slideThree fr">  
+              <input value="None" id="r4" name="check" checked="" type="checkbox">
+              <label for="r4"></label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1>培训内容及效果反馈</h1>
+            <div class="formContent">
+              <textarea class="form-control" placeholder="培训内容及效果反馈"></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1>本次摆放对该店提出的意见或建议</h1>
+            <div class="formContent">
+              <textarea class="form-control" placeholder="本次摆放对该店提出的意见或建议"></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1>代理商反馈的情况</h1>
+            <div class="formContent">
+              <textarea class="form-control" placeholder="代理商反馈的情况"></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="formWriteC">
+        <ul class="formWriteList">
+          <li>
+            <h1>上次代理商反馈问题的解决结果</h1>
+            <div class="formContent clearfix">
+              <span class="handleResult cur">✔已解决</span>
+              <span class="handleResult">正在解决</span>
+              <span class="handleResult" style="margin:0;">未解决</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="btns">
+        <div class="col-xs-6 col-sm-6" style="padding-right:10px;">
+          <button class="form-control btn" style="background-color:#1b9cb9;">修 改</button>
+        </div>
+        <div class="col-xs-6 col-sm-6" style="padding-left:10px;">
+          <button class="form-control btn">删 除</button>
+        </div>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

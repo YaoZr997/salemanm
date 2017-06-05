@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<style type="text/css">
+  .contactsTitle{padding: 10px; color: #999;}
+  .listGroup{margin-bottom: 0;  }
+  .listGroup>li>a{padding-left: 50px;}
+  #contactsPop .listGroup>li>a{padding-left: 40px;}
+  .listGroup>li>a>.listCt{background: none;}
+  .sideNav{z-index: 999;position:fixed; right:0; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+  .sideNav li{padding: 0 6px;color: #bbb; line-height: 18px; cursor: pointer;}
+  .searchC .form-control{background-color:#fbfbfb;height:28px; border-radius:17px; text-align:center;color: #999;}
+</style>
+<title>通讯录</title>
+</head>
+<body style="width:100%;">
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">通讯录</div>
+      <div class="col-xs-2"></div>
+    </header>
+    <section class="container marginT">
+      <div class="searchC" style="padding:8px;">
+        <input type="text" class="form-control" placeholder="搜索">
+        <a href="javascript:void(0)" class="search abs" style="right:8px; top:2px;z-index:99;">
+          <img src="images/searchDark.png" width="20" alt="">
+        </a>
+      </div>
+      <div class="menu_secondC">
+        <div class="menu_second">
+          <div class="col-xs-4 col-sm-4">
+            <img src="images/contacts-group.png" alt="" height="24">
+            <p>小组成员</p>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <img src="images/contacts-department.png" alt="" height="24">
+            <p>部门成员</p>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <img src="images/contacts-more.png" alt="" height="24">
+            <p>更多</p>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+        <h1 class="contactsTitle">星标</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">阿香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">阿李
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle">最近联系</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">白李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">包李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="A">A</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">阿香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">阿程
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="B">B</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">白李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">包李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="C">C</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">陈李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">程李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="D">D</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">邓李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">丁李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="E">E</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">尔李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">恩李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="F">F</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">范李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">冯李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="G">G</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">甘李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">耿李香
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h1 class="contactsTitle" id="H">H</h1>
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">胡李香
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-head.png" height="32" alt="">黄李香
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="sideNav" id="sideNav">
+      <ul>
+        <li><a href="javascript:void(0)">A</a></li>
+        <li><a href="javascript:void(0)">B</a></li>
+        <li><a href="javascript:void(0)">C</a></li>
+        <li><a href="javascript:void(0)">D</a></li>
+        <li><a href="javascript:void(0)">E</a></li>
+        <li><a href="javascript:void(0)">F</a></li>
+        <li><a href="javascript:void(0)">G</a></li>
+        <li><a href="javascript:void(0)">H</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup popupCenter" id="contactsPop">
+      <div class="popupContent">
+        <ul class="listGroup">
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-call.png" height="32" alt="">呼叫
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-message.png" height="32" alt="">发送信息
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-video.png" height="32" alt="">发起视频聊天
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-Email.png" height="32" alt="">发送邮件
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <div class="listCt">
+                <img src="images/contacts-collect.png" height="32" alt="">收藏
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="popupFooter">
+          <button class="form-control btn popupClose" style="background:none; border:1px solid #ddd; color:#777;">取 消</button>
+        </div>
+      </div>
+    </div>
+    <div class="dropBg"></div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#sideNav li').click(function(){
+      var id = $(this).children('a').text();
+      var t = $('#'+id).offset().top-44;
+      $('body').scrollTop(t);
+    })
+    $('.contacts li').click(function(){
+      $('.dropBg,#contactsPop').fadeIn('fast');
+      $('body').addClass('overflowHidden')
+    })
+    $('.dropBg,.popupClose').click(function(){
+      $('.dropBg,.popup').fadeOut('fast');
+      $('body').removeClass('overflowHidden')
+    })
+  })
+</script>
+</body>
+</html>

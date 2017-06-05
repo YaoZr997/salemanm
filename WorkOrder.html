@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workOrder.css">
+<link rel="stylesheet" href="js/owl/owl.carousel.css">
+<link rel="stylesheet" href="js/owl/owl.theme.css">
+<title>工单</title>
+<style>
+  .owl-carousel{padding-bottom: 20px;}
+  .owl-theme .owl-controls{position: absolute; bottom: -5px;}
+  .owl-theme .owl-controls .owl-page.active span{width: 20px; background-color: #e8512e;}
+  /*#wrap,#personal,.header,.footer{transition:left 0.3s; -webkit-transition:left 0.3s;}*/
+</style>
+</head>
+<body style="width:100%;">
+  <section id="personal" class="personal">
+    <div class="userInfo">
+      <img src="images/personal.png" alt="" width="64" class="fl">
+      <p style="font-size:18px;">李丹丹</p>
+      <p>省分公司信息化部</p>
+    </div>
+    <div class="userOperateC">
+      <ul class="userOperate">
+        <li><a href="javascript:void(0)"><img src="images/person-xx.png" width="20" height="20" alt="" class="fl">我的消息</a></li>
+        <li><a href="javascript:void(0)"><img src="images/person-gm.png" width="20" height="20" alt="" class="fl">修改密码</a></li>
+        <li><a href="javascript:void(0)"><img src="images/person-fk.png" width="20" height="20" alt="" class="fl">意见反馈</a></li>
+        <li><a href="javascript:void(0)"><img src="images/person-sz.png" width="20" height="20" alt="" class="fl">设置</a></li>
+        <li><a href="javascript:void(0)"><img src="images/person-qh.png" width="20" height="20" alt="" class="fl">切换账号</a></li>
+        <li><a href="javascript:void(0)"><img src="images/person-tc.png" width="20" height="20" alt="" class="fl">退出</a></li>
+      </ul>
+    </div>
+    <div class="otherInfo clearfix">
+      <div class="weather fl">
+        <img src="images/sun.png" width="40" height="40" alt="">
+      </div>
+      <div class="place fl">
+        <p style="font-size:16px;">杭州</p>
+        <p>晴 9℃ - 18℃</p>
+      </div>
+      <div class="air fr">
+        <p>PM2.5</p>
+        <p><span>75</span></p>
+      </div>
+    </div>
+  </section>
+  <div class="wrap" id="wrap" style="position:relative;">
+    <div class="shadow" id="shadow"></div>
+    <header class="header clearfix">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="user" id="user">
+          <img src="images/user.png" width="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">消息</div>
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="search fr">
+          <img src="images/search.png" width="24" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="container marginT marginB" id="workOrder">
+      <div class="menu_secondC">
+        <div class="menu_second">
+          <div class="col-xs-3 col-sm-3">
+            <img src="images/wo-gongdan.png" alt="" height="20">
+            <p>工单</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <img src="images/wo-shenpi.png" alt="" height="20">
+            <p>审批</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <img src="images/wo-xiaoxi.png" alt="" height="20">
+            <p>即时消息</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 menuSH">
+            <img src="images/wo-showhide.png" alt="" height="20">
+            <p>隐藏</p>
+          </div>
+        </div>
+      </div>
+      <div class="workOrderC">
+        <ul class="woList">
+          <!-- <li>
+            <h1 class="active"><img src="images/wo-fuwu.png" width="30px" alt="" class="fl"><p class="wo-type">服务工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC" style="display:block">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span>沃店用户</p>
+                <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加</p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-yujing.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#deb441;">预警挽留工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span></p>
+                <p><span>工单内容：</span></p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-yixiang.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#55a651;">意向用户工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span></p>
+                <p><span>工单内容：</span></p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-xuyue.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#4c9cb9;">续约维系工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span></p>
+                <p><span>工单内容：</span></p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-weixi.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#7e61b3;">维系营销工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span></p>
+                <p><span>工单内容：</span></p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li> -->
+          <li>
+            <h1><img src="images/wo-fuwu.png" width="30px" alt="" class="fl"><p class="wo-type">服务工单<span>4条</span></p><i></i></h1>
+            <div class="owl-carousel">
+              <div class="item">
+                <div class="wo-decC">
+                  <a href="WoList.html" class="wo-dec">
+                    <p><span>工单名称：</span>沃店用户</p>
+                    <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加</p>
+                    <div style="color:#e8512e;">
+                      <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                    </div>
+                    <div class="process"><div style="width:"></div></div>
+                    <div class="clearfix">
+                      <span class="fl">完成率</span>
+                      <span class="fr">9%</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wo-decC">
+                  <a href="javascript:void(0)" class="wo-dec">
+                    <p><span>工单名称：</span>沃店用户</p>
+                    <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加</p>
+                    <div style="color:#e8512e;">
+                      <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                    </div>
+                    <div class="process"><div style="width:"></div></div>
+                    <div class="clearfix">
+                      <span class="fl">完成率</span>
+                      <span class="fr">9%</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wo-decC">
+                  <a href="javascript:void(0)" class="wo-dec">
+                    <p><span>工单名称：</span>沃店用户</p>
+                    <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加</p>
+                    <div style="color:#e8512e;">
+                      <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                    </div>
+                    <div class="process"><div style="width:"></div></div>
+                    <div class="clearfix">
+                      <span class="fl">完成率</span>
+                      <span class="fr">9%</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wo-decC">
+                  <a href="javascript:void(0)" class="wo-dec">
+                    <p><span>工单名称：</span>沃店用户</p>
+                    <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加</p>
+                    <div style="color:#e8512e;">
+                      <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                    </div>
+                    <div class="process"><div style="width:"></div></div>
+                    <div class="clearfix">
+                      <span class="fl">完成率</span>
+                      <span class="fr">9%</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wo-decC">
+                  <a href="javascript:void(0)" class="wo-dec">
+                    <p><span>工单名称：</span>沃店用户</p>
+                    <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加推荐满足换卡升4G的沃店用户参加</p>
+                    <div style="color:#e8512e;">
+                      <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                    </div>
+                    <div class="process"><div style="width:"></div></div>
+                    <div class="clearfix">
+                      <span class="fl">完成率</span>
+                      <span class="fr">9%</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-yujing.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#deb441;">预警挽留工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span>沃店用户</p>
+                <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加</p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-yixiang.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#55a651;">意向用户工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span>沃店用户</p>
+                <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加</p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-xuyue.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#4c9cb9;">续约维系工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span>沃店用户</p>
+                <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加</p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h1><img src="images/wo-weixi.png" width="30px" alt="" class="fl"><p class="wo-type" style="color:#7e61b3;">维系营销工单<span>4条</span></p><i></i></h1>
+            <div class="wo-decC">
+              <a href="javascript:void(0)" class="wo-dec">
+                <p><span>工单名称：</span>沃店用户</p>
+                <p><span>工单内容：</span>推荐满足换卡升4G的沃店用户参加</p>
+                <div style="color:#e8512e;">
+                  <img src="images/wo-clock.png" width="16" alt="" class="fl" style="margin-right:5px;margin-top:2px;">剩余完成时间：3天10小时
+                </div>
+                <div class="process"><div style="width:"></div></div>
+                <div class="clearfix">
+                  <span class="fl">完成率</span>
+                  <span class="fr">9%</span>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerNav">
+        <div class="navToggle">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon" style="background-image:url(images/footer-workplat.png)"></i>
+            <p>工作台</p>
+          </a>
+        </div>
+        <div class="navToggle cur">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon"></i>
+            <p>消息</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="PointWg.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-shouyi.png)"></i>
+            <p>收益</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="Rank.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-renwu.png)"></i>
+            <p>任务</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="More.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-more.png)"></i>
+            <p>更多</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/owl/owl.carousel.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript">
+  /*$(function(){
+    $('.woList>li>h1').click(function(){
+      $(this).toggleClass('active').siblings('.wo-decC').slideToggle();
+    })
+  })*/
+  $(function(){
+    $('.woList>li>.owl-carousel').owlCarousel({
+      autoHeight: true,
+    });
+  })
+  $(function(){
+    var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    $('#personal').height(h-20);
+    $('#user').click(function(){
+      $('#personal').css({'left':'0'});
+      $('#wrap,.header,.footer').css({'left':'80%'});
+      $('#shadow').css('zIndex','9999');
+      $('body').css('position','fixed')
+      $(this).css('opacity','0');
+    })
+    $('#shadow').click(function(){
+      $('#personal').css({'left':'-80%'});
+      $('#wrap,.header,.footer').css({'left':'0'});
+      $('#shadow').css('zIndex','-1');
+      $('body').css('position','static');
+      $('#user').css('opacity','1');
+    })
+    var target = document.getElementById("shadow");
+    /*touch.on(document, 'swiperight', function(ev){
+      $('#personal').css({'left':'0'});
+      $('#wrap,.header,.footer').css({'left':'80%'});
+      $('#shadow').css('zIndex','9999');
+      $('body').css('position','fixed')
+      $('#user').css('opacity','0');
+    });*/
+    touch.on(target, 'swipeleft', function(ev){
+      $('#personal').css({'left':'-80%'});
+      $('#wrap,.header,.footer').css({'left':'0'});
+      $('#shadow').css('zIndex','-1');
+      $('body').css('position','static');
+      $('#user').css('opacity','1');
+    });
+  })
+</script>
+</body>
+</html>

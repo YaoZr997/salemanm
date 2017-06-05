@@ -1,0 +1,41 @@
+﻿.workOrderC{padding: 10px 10px 0;}
+.woList>li{background-color: #fff; padding: 8px; overflow: hidden; border-radius: 5px; -webkit-border-radius: 5px; margin-bottom: 10px;}
+.woList>li>h1{line-height: 30px; overflow: hidden;}
+/* .woList>li>h1.active i{transform:rotate(90deg); -webkit-transform:rotate(90deg);} */
+.woList>li>h1>i{display: inline-block; float: right; width: 30px; height: 30px; background: url(../images/arrow-right.png) no-repeat center center; background-size: 10px 18px; transition:all 0.5s; -webkit-transition:all 0.5s;}
+.wo-type{float: left; color: #e8512e;margin-left: 5px; font-size: 16px;}
+.wo-type>span{display: inline-block; color: #999; padding-left: 10px; margin-left: 10px; border-left: 1px solid #ddd; font-size: 12px;}
+/*.woList>li .wo-decC{display: none;}*/
+.woList>li .wo-dec{padding: 0 15px; display: block; border-top: 1px solid #ddd; margin-top: 10px; font-size: 14px;}
+.woList>li .wo-dec>p,.woList>li .wo-dec>div{margin:8px 0;}
+.woList>li .wo-dec>p{position: relative; padding-left: 5em; min-height: 20px;}
+.woList>li .wo-dec>p span{position: absolute; left: 0; color: #666;}
+.woList>li .wo-dec>div:last-child{margin-bottom: 0;}
+
+
+.woListS{text-align: center; background-color: #fff; overflow: hidden;}
+.woListS>div{border-bottom: 3px solid #fff; height: 44px; line-height: 44px; font-size: 14px; color: #999;}
+.woListS>div.cur{border-color: #ee555b; color: #ee555b;}
+.woListDetail>li{position: relative; margin-top: 10px; background-color: #fff; padding: 10px 15px;}
+.woListDetail>li>i{position: absolute; right: 0; top: 0; display: inline-block; background: url(../images/undone.png) no-repeat; width: 44px; height: 44px; background-size: 44px 44px;}
+.woListDetail>li>h1{color: #e8512e; border-left: 3px solid #e8512e; overflow: hidden; padding: 2px 10px; font-size: 14px;}
+.woListDec{padding: 10px 15px 0; position: relative;}
+.woListDec.option .optionIcon{display: inline-block; width: 20px; height: 20px; background: url(../images/sel.png) no-repeat; background-size: 40px 20px; position: absolute; top: 0; right: 0;}
+.woListDec.option{border: 1px solid #ddd;margin-top: 10px;}
+.woListDec.option.selected{border-color: #e7512e;}
+.woListDec.option.selected .optionIcon{background-position: -20px 0;}
+.woListDec>p{padding: 3px 0 3px 5em; position: relative;}
+.woListDec>p>span{position: absolute; left: 0; color: #999;}
+.woType>span{display: inline-block; background-color: #666; color: #fff; border-radius: 10px; padding: 0 10px; margin-right: 10px; line-height: 20px;}
+.woType{font-size: 14px; padding-bottom: 5px;}
+#done .woListDetail>li>i{background-image: url(../images/done.png);}
+
+.examine .woListDetail>li .woType{white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
+.btn-location>img{display: inline-block; margin-right: 5px;}
+.btn-location{height: 34px; background-color: #d9534f; font-size: 14px; position: absolute; right: 15px; top: 5px; line-height: 34px; text-align: center; color: #fff; border-radius: 5px; -webkit-border-radius: 5px; width: 80px;}
+.btn-location:hover{color: #fff; background-color: #d93732;}
+
+.handleOption>div{padding: 5px 5px 5px 0; font-size: 14px; line-height: 20px;}
+.handleOption>div.selected{color: #e8512e;}
+.handleOption>div.selected>span{border: 0; background: url(../images/selected.png) no-repeat; background-size: 20px 20px;}
+.handleOption>div>span{vertical-align:middle;display: inline-block; width: 20px; height: 20px; border-radius: 10px; -webkit-border-radius: 10px; border: 2px solid #ddd; margin-right: 10px;}

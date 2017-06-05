@@ -1,0 +1,64 @@
+﻿.pointC{padding-top: 10px;}
+.pointTotal{padding: 15px 0; background-color: #fff;}
+.pointTotal>div.cur>.roundL{width: 100px; height: 100px; background-color: #a4dde5; margin: 0 auto;}
+.pointTotal>div.cur:after{content:''; width: 14px; height: 14px; background-color: #f8f8f8; border-left: 1px solid #ddd; border-top: 1px solid #ddd; transform:rotate(45deg); -webkit-transform:rotate(45deg); position: absolute; bottom: -22px; left: 50%; margin-left: -7px;}
+.pointTotal>div:nth-child(2)>.roundL>.roundM{background-color: #10afbd;}
+.pointTotal>div{position: relative; font-size: 14px; background-color: #fff; padding-bottom: 11px;}
+.pointTotal>div:nth-child(2){padding: 0;}
+.pointTotal>div>img{margin: 10px auto 0;}
+.roundL{width: 80px; height: 80px; background-color: #de9f9f; border-radius: 50%; -webkit-border-radius: 50%; margin: 10px auto;}
+.roundM{width: 90%; height: 90%; background-color: #ee585f; border-radius: 50%; -webkit-border-radius: 50%; position: relative; top: 5%; left: 5%;}
+.pointData{width:100%;color: #fff; text-align: center; position: absolute; top: 50%; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+
+.pointDecC{background-color: #fff; padding: 15px 10px; clear: both;}
+.pointDec{border: 1px solid #ddd; background-color: #f8f8f8; padding: 5px;}
+.pointDecList>li>a>i,.pointTypeIcon{display: inline-block; width: 24px; height: 24px; background: url(../images/p-icon.png) no-repeat 0 0; background-size: 24px 120px; float: left; margin-right: 5px;}
+.pointDecList>li{padding: 8px 0; border-bottom: 1px solid #ddd;}
+.pointDecList>li:last-child{border: 0;}
+.pointDecList>li>a{padding-right:15px; display: block; line-height: 24px; background: url(../images/arrow-right.png) no-repeat right center; background-size: 8px 14px;}
+
+.pointWgSerC,.rankYyyC{background-color: #fff; margin-top: 10px; padding: 15px 20px;}
+.pointTitle{color: #e21e27; font-size: 14px;}
+.serObj>a{padding: 15px 0px 10px;line-height: 24px;overflow:hidden; display: block; font-size: 14px;background: url(../images/arrow-right.png) no-repeat right center; background-size: 10px 17px;}
+.serObj>a>img{margin-right: 10px;}
+.serObjPoint{border-top: 1px solid #ddd; padding-top: 10px;}
+
+.rankRestC{margin-top: 10px;}
+.rankRest>li{float: left; width: 50%; line-height: 20px; padding: 15px 15px 0 0;}
+.rankNum{display:inline-block;width: 20px;height: 20px; background-color: #eee; border-radius: 10px; -webkit-border-radius: 10px; margin-right:10px; line-height: 20px; text-align: center;}
+.rankTopC{position: relative; padding-top: 15px;}
+.rankTop{padding: 0 15px; position: relative; z-index: 5;}
+.rankTop>div{padding: 0 2px;}
+.rankTop .column{height: 90px; position: relative;}
+.columnT,.columnB,.columnBody{width:100%; position: absolute;}
+.columnT,.columnB{height: 8px; border-radius: 50%; -webkit-border-radius: 50%;}
+.columnT{bottom: 24px; background-color: #d2cfcc; z-index: 7;}
+.columnBody,.columnB{background-color: #b6afa8;}
+.columnBody{bottom: 4px; height: 24px;}
+.columnB{bottom: 0;}
+.rankTopInfo{position: absolute; bottom: 36px; left: 50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); width: 100%;}
+.rankTopInfo img{display: inline-block; margin-right: 5px;}
+.rankTopInfo>p{text-align: center; font-size: 13px;}
+.rankBg{width: 100%; height: 20px; border-radius: 50%; -webkit-border-radius: 50%; background-color: #f0f0f0; bottom: -8px; position: absolute;}
+
+.serObjList>li{background-color: #fff; padding: 0px 15px 10px; margin-top: 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+
+.pointBaseInfo{padding: 0 15px; color: #777}
+.pointDate{padding: 10px 0 5px; line-height: 24px;}
+.pointDate>span,.pointVal>span{font-size: 16px; color: #555;}
+
+.pointYyy .pointTypeIcon{width: 30px; height: 30px; background-size: 30px 150px; position: absolute; left: 0; top: 50%; margin-top: -15px;}
+.pointYyy .pointTypeIcon.wx{background-position: 0 -30px;}
+.pointYyy .pointTypeIcon.fw{background-position: 0 -60px;}
+.pointYyy .pointTypeIcon.zd{background-position: 0 -90px;}
+.pointYyy .pointTypeIcon.jc{background-position: 0 -120px;}
+.pointYyy{padding-left: 15px; background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.pointYyy>li{border-top: 0; padding:10px 15px 10px 40px; margin-bottom: 0;}
+.pointYyy>li:last-child{border-bottom: 0;}
+.pointYyy>li p{overflow: hidden; text-overflow:ellipsis; max-height: 24px; white-space: nowrap; line-height: 24px;}
+.pointYyy>li p:last-child{color: #777; font-size: 12px;}
+.pointYyy>li p.increase{color:#e8512e;}
+
+.brokerageUl>li{padding-left: 50px;}
+.brokerageIcon{width: 45px;position: absolute; left: 0;top: 50%;transform:translateY(-50%);-webkit-transform:translateY(-50%); text-align: center; line-height: 20px; padding-right:5px; border-right: 1px dashed #ddd;}
+.brokerageIcon>i{display: inline-block; width: 30px; height: 30px; background: url(../images/brokerage.png) no-repeat; background-size: 30px 30px;}

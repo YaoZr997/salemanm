@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workOrder.css">
+<title>工单</title>
+<style type="text/css">
+  /*body{font-family: '宋体'}
+  ul li{background: red; height: 20px;margin: 5px 0;}
+  ul li:nth-child(1){width: 30%}
+  ul li:nth-child(2){width: 17%}
+  ul li:nth-child(3){width: 18%}
+  ul li:nth-child(4){width: 17%}
+  ul li:nth-child(5){width: 18%}*/
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">服务工单</div>
+      <div class="col-xs-2"></div>
+    </header>
+    <section class="container marginT marginB">
+      <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> -->
+      <div class="woListS" id="woListS">
+        <div class="col-xs-6 col-sm-6 cur">未处理工单</div>
+        <div class="col-xs-6 col-sm-6">已处理工单</div>
+      </div>
+      <div class="woListC" id="done" style="display:none;">
+        <ul class="woListDetail">
+          <li>
+            <i></i>
+            <h1><span class="fl">用户号码：</span><span class="fl">13011010010</span><span class="fl" style="margin-left:10px;">姓名：</span><span class="fl">张明敏</span></h1>
+            <div class="woListDec">
+              <div class="woType"><span>服务工单</span>沃店用户</div>
+              <p><span>活动描述：</span>13062726545#杭州</p>
+              <p><span>话述模板：</span>您好，我是联通沃店服务人员，联通网络已全面升级4G，您只要到我们沃店更新新版手机卡，就可以体验到联通百兆极速4G网络，同时可获赠8日假日80GB省内流量包。累计三天使用4G网络，还将赠送1.5G省内流量。活动时间有限，请您尽快携带相关证件到我们沃店换卡吧！</p>
+              <p><span>营销原因：</span>引导满足换卡升4G的沃店用户参与该活动</p>
+            </div>
+          </li>
+          <li>
+            <i></i>
+            <h1><span class="fl">用户号码：</span><span class="fl">13011010010</span><span class="fl" style="margin-left:10px;">姓名：</span><span class="fl">张明敏</span></h1>
+            <div class="woListDec">
+              <div class="woType"><span>服务工单</span>沃店用户</div>
+              <p><span>活动描述：</span>13062726545#杭州</p>
+              <p><span>话述模板：</span>您好，我是联通沃店服务人员，联通网络已全面升级4G，您只要到我们沃店更新新版手机卡，就可以体验到联通百兆极速4G网络，同时可获赠8日假日80GB省内流量包。累计三天使用4G网络，还将赠送1.5G省内流量。活动时间有限，请您尽快携带相关证件到我们沃店换卡吧！</p>
+              <p><span>营销原因：</span>引导满足换卡升4G的沃店用户参与该活动</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="woListC" id="undone">
+        <ul class="woListDetail">
+          <li>
+            <i></i>
+            <h1><span class="fl">用户号码：</span><span class="fl">13011010010</span><span class="fl" style="margin-left:10px;">姓名：</span><span class="fl">张明敏</span></h1>
+            <div class="woListDec option selected">
+              <i class="optionIcon"></i>
+              <div class="woType"><span>服务工单</span>沃店用户</div>
+              <p><span>活动描述：</span>13062726545#杭州</p>
+              <p><span>话述模板：</span>您好，我是联通沃店服务人员，联通网络已全面升级4G，您只要到我们沃店更新新版手机卡，就可以体验到联通百兆极速4G网络，同时可获赠8日假日80GB省内流量包。累计三天使用4G网络，还将赠送1.5G省内流量。活动时间有限，请您尽快携带相关证件到我们沃店换卡吧！</p>
+              <p><span>营销原因：</span>引导满足换卡升4G的沃店用户参与该活动</p>
+            </div>
+            <div class="woListDec option">
+              <i class="optionIcon"></i>
+              <div class="woType"><span>服务工单</span>沃店用户</div>
+              <p><span>活动描述：</span>13062726545#杭州</p>
+              <p><span>话述模板：</span>您好，我是联通沃店服务人员，联通网络已全面升级4G，您只要到我们沃店更新新版手机卡，就可以体验到联通百兆极速4G网络，同时可获赠8日假日80GB省内流量包。累计三天使用4G网络，还将赠送1.5G省内流量。活动时间有限，请您尽快携带相关证件到我们沃店换卡吧！</p>
+              <p><span>营销原因：</span>引导满足换卡升4G的沃店用户参与该活动</p>
+            </div>
+            <div class="operate">
+              <div class="col-xs-4 col-sm-4"><a href="tel://15700107071"><img src="images/wo-tel.png" alt="" height="24">呼叫</a></div>
+              <div class="col-xs-4 col-sm-4"><img src="images/wo-banli.png" alt="" height="24">办理</div>
+              <div class="col-xs-4 col-sm-4 handle"><img src="images/wo-chuli.png" alt="" height="24">处理</div>
+            </div>
+          </li>
+          <li>
+            <i></i>
+            <h1><span class="fl">用户号码：</span><span class="fl">13011010010</span><span class="fl" style="margin-left:10px;">姓名：</span><span class="fl">张明敏</span></h1>
+            <div class="woListDec">
+              <div class="woType"><span>服务工单</span>沃店用户</div>
+              <p><span>活动描述：</span>13062726545#杭州</p>
+              <p><span>话述模板：</span>您好，我是联通沃店服务人员，联通网络已全面升级4G，您只要到我们沃店更新新版手机卡，就可以体验到联通百兆极速4G网络，同时可获赠8日假日80GB省内流量包。累计三天使用4G网络，还将赠送1.5G省内流量。活动时间有限，请您尽快携带相关证件到我们沃店换卡吧！</p>
+              <p><span>营销原因：</span>引导满足换卡升4G的沃店用户参与该活动</p>
+            </div>
+            <div class="operate">
+              <div class="col-xs-4 col-sm-4"><a href="tel://15700107071"><img src="images/wo-tel.png" alt="" height="24">呼叫</a></div>
+              <div class="col-xs-4 col-sm-4"><img src="images/wo-banli.png" alt="" height="24">办理</div>
+              <div class="col-xs-4 col-sm-4 handle"><img src="images/wo-chuli.png" alt="" height="24">处理</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="woListC" id="allDone" style="text-align:center; font-size:16px; color:#999; display:none;">
+        <img src="images/allDone.png" style="margin:30% auto 20px;" alt="" width="30%">
+        <p>勤劳的小伙伴！</p>
+        <p>现在没有未处理工单！</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerNav">
+        <div class="col-xs-3 col-sm-3 cur">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon"></i>
+            <p>消息</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="PointWg.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-shouyi.png)"></i>
+            <p>收益</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="Rank.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-renwu.png)"></i>
+            <p>任务</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="More.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-more.png)"></i>
+            <p>更多</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="popup" id="handle">
+      <div class="popupContent">
+        <div class="popupHeader">
+          <h1>工单处理</h1>
+        </div>
+        <div class="popupBody">
+          <div class="handleOption clearfix">
+            <div class="col-xs-6 col-sm-6 selected"><span></span>结办</div>
+            <div class="col-xs-6 col-sm-6"><span></span>结单</div>
+            <div class="col-xs-6 col-sm-6"><span></span>预约工单</div>
+            <div class="col-xs-6 col-sm-6"><span></span>下次处理</div>
+          </div>
+          <div class="formWriteC">
+            <ul class="formWriteList" style="border-top:1px solid #ddd;">
+              <li id="time">
+                <div class="selector">
+                  <input type="text" class="form-control" placeholder="下次处理时间">
+                  <input type="date" class="form-control form-date" id="date">
+                </div>
+              </li>
+              <li id="wake">
+                <div class="selector">
+                  <input type="text" class="form-control" placeholder="提醒方式" value="提醒方式1">
+                  <select class="select form-control" name="" id="">
+                    <option value="0" selected="">提醒方式1</option>
+                    <option value="0">提醒方式2</option>
+                    <option value="0">提醒方式3</option>
+                    <option value="0">提醒方式4</option>
+                    <option value="0">提醒方式5</option>
+                  </select>
+                </div>
+              </li>
+              <li style="padding:15px 0;">
+                <textarea class="form-control" placeholder="备注" style="height:96px; padding:0 13px;"></textarea>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="popupFooter">
+          <button class="form-control btn popupClose">提 交</button>
+        </div>
+        <span class="popupClose popupCloseBtn">×</span>
+      </div>
+    </div>
+    <div class="dropBg"></div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#woListS>div').click(function(){
+      $(this).addClass('cur').siblings().removeClass('cur');
+      if($(this).text() == '已处理工单'){
+        $('#undone').hide();
+        $('#done').show();
+      }
+      else{
+        $('#done').hide();
+        $('#undone').show();
+      }
+    })
+    $('.woListDec.option').click(function(){
+      $(this).toggleClass('selected');
+    })
+    /*var w = window.screen.width;
+    $('#date').width(w-70);*/
+    $('#date').change(function(){
+      $(this).siblings('input').val($(this).val());
+    })
+    $('.handle').click(function(){
+      $('.dropBg,#handle').fadeIn('fast');
+      $('body').addClass('overflowHidden')
+    })
+    $('.dropBg,.popupClose').click(function(){
+      $('.dropBg,.popup').fadeOut('fast');
+      $('body').removeClass('overflowHidden')
+    })
+
+  })
+</script>
+</body>
+</html>

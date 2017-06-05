@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/point.css">
+<title>佣金</title>
+<style>
+  .pointDecList>li>a{padding: 0 10px;background: none;}
+  .pointDecC{position: relative;}
+  .pointDecC:after{content:''; width: 14px; height: 14px; background-color: #f8f8f8; border-left: 1px solid #ddd; border-top: 1px solid #ddd; transform:rotate(45deg); -webkit-transform:rotate(45deg); position: absolute; top: 8px; left: 50%; margin-left: -7px;}
+  .brokerage{background:url(images/bank.png) center bottom no-repeat #fff; padding: 15px 0 90px; background-size: 60px 72px;}
+  .brokerage>div.cur .brokerageOwl{background-color: #08c294;}
+  .brokerage>div.cur .brokerageOwl:after{content: ""; border-width: 10px;border-style: solid;border-color: #08c294 transparent transparent; position: absolute; bottom: -20px; left: 50%; margin-left: -10px;}
+  .brokerageOwl{width: 80px; height: 80px; background-color: #e95e3e; border-radius: 15px; margin: 0 auto;position: relative;}
+  .brokerageData{text-align: center;color: #fff;position: relative;top: 50%;transform:translateY(-50%); font-size: 14px;}
+  .brokerageData>p:last-child{font-size: 18px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8">佣金</div>
+      <div class="col-xs-2">
+        <!-- <a href="javascript:void(0)" class="search fr">
+          <img src="images/table.png" width="24" alt="">
+        </a> -->
+      </div>
+    </header>
+    <section class="container marginT marginB">
+      <div class="brokerageC">
+        <div class="brokerage clearfix">
+          <div class="col-xs-4 col-sm-4">
+            <div class="brokerageOwl">
+              <div class="brokerageData">
+                <p>上月</p>
+                <p>1,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4 cur">
+            <div class="brokerageOwl">
+              <div class="brokerageData">
+                <p>上月</p>
+                <p>1,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-4">
+            <div class="brokerageOwl">
+              <div class="brokerageData">
+                <p>上月</p>
+                <p>1,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pointDecC">
+          <div class="pointDec clearfix">
+            <div class="col-xs-12 col-sm-12">
+              <ul class="pointDecList">
+                <li>
+                  <a href="PointWgSum.html">
+                    <i></i>销售佣金<span class="fr">36000</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="PointWgSum.html">
+                    <i style="background-position:0 -24px;"></i>维系佣金<span class="fr">36000</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="PointWgSum.html">
+                    <i style="background-position:0 -48px;"></i>服务佣金<span class="fr">36000</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="PointWgSum.html">
+                    <i style="background-position:0 -72px;"></i>终端佣金<span class="fr">36000</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="PointWgSum.html">
+                    <i style="background-position:0 -96px;"></i>奖惩佣金<span class="fr">36000</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+        <div class="pointWgSerC">
+          <div class="pointWgSer">
+            <h1 class="pointTitle">佣金占比</h1>
+            <div class="rankTopC">图表</div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerNav">
+        <div class="col-xs-3 col-sm-3">
+          <a href="WorkOrder.html">
+            <i class="bottomIcon"></i>
+            <p>消息</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3 cur">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon" style="background-image:url(images/footer-shouyi.png)"></i>
+            <p>收益</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="Rank.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-renwu.png)"></i>
+            <p>任务</p>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-3">
+          <a href="More.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-more.png)"></i>
+            <p>更多</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/owl/owl.carousel.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('.pointWgSer>.owl-carousel').owlCarousel({
+      autoHeight: true,
+    });
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workPlat.css">
+<title>工作台</title>
+</head>
+<body style="overflow:hidden;width:100%;">
+  <div class="wrap" id="wrap" style="position:relative;">
+    <div class="shadow" id="shadow"></div>
+    <header class="header clearfix">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="user" id="user">
+          <img src="images/user.png" width="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">工作台</div>
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="search fr">
+          <img src="images/search.png" width="24" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="container marginT marginB" id="workPlat">
+      <div class="workPlatC">
+        <h1 class="incomeDate">2016年3月收入（3.1—3.31）</h1>
+        <div class="baseInfo">
+          <div class="infoTags">
+            <div class="infoTag">
+              <div class="infoTagHead">
+                <img src="images/workPlat-bysr.png" width="40" alt="">
+                <p>本月收入</p>
+                <p style="font-size:16px;">24,245.87</p>
+              </div>
+              <div class="infoTagFoot"><i></i><i></i>环比：+2.42% ↑</div>
+            </div>
+            <div class="infoTag cur">
+              <div class="infoTagHead">
+                <img src="images/workPlat-bysy.png" width="40" alt="">
+                <p>本月收入</p>
+                <p style="font-size:16px;">24,245.87</p>
+              </div>
+              <div class="infoTagFoot"><i></i><i></i>环比：+2.42% ↑</div>
+            </div>
+          </div>
+          <div class="baseInfoOther clearfix">
+            <div class="col-xs-6 col-sm-6">
+              <p>昨日收入</p>
+              <p>2,895.87</p>
+              <p>↑+1.45%</p>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+              <p>昨日收入</p>
+              <p>2,895.87</p>
+              <p>↑+1.45%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h1 class="cardTitle more">
+            <em></em>其中：
+          </h1>
+          <div class="cardListC" style="overflow:auto;">
+            <table class="workPlatTable" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <th>&nbsp;</th>
+                <th>昨日</th>
+                <th>本月</th>
+                <th>本季度</th>
+                <th>本年</th>
+              </tr>
+              <tr>
+                <td>4G用户收入</td>
+                <td>1,976.14</td>
+                <td>28,973.45</td>
+                <td>90,342.43</td>
+                <td>314,878.67</td>
+              </tr>
+              <tr style="background-color:#f0f0f0;">
+                <td>4G用户收入</td>
+                <td>1,976.14</td>
+                <td>28,973.45</td>
+                <td>90,342.43</td>
+                <td>314,878.67</td>
+              </tr>
+              <tr>
+                <td>4G用户收入</td>
+                <td>1,976.14</td>
+                <td>28,973.45</td>
+                <td>90,342.43</td>
+                <td>314,878.67</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h1 class="cardTitle more">
+            <em></em>最近7天走势图
+          </h1>
+          <div class="cardListC">
+            图表
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerNav">
+        <div class="navToggle cur">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon" style="background-image:url(images/footer-workplat.png)"></i>
+            <p>工作台</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="javascript:void(0)">
+            <i class="bottomIcon"></i>
+            <p>消息</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="PointWg.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-shouyi.png)"></i>
+            <p>收益</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="Rank.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-renwu.png)"></i>
+            <p>任务</p>
+          </a>
+        </div>
+        <div class="navToggle">
+          <a href="More.html">
+            <i class="bottomIcon" style="background-image:url(images/footer-more.png)"></i>
+            <p>更多</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('.cardTitle.more').click(function(){
+      $(this).toggleClass('expand').siblings('.cardListC').fadeToggle('fast');
+    })
+  })
+</script>
+</body>
+</html>

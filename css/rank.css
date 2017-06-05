@@ -1,0 +1,16 @@
+﻿.rankListC>h1{line-height: 18px; padding: 10px; overflow: hidden;}
+.rankTab{background-color: #fff; margin-top: 10px; overflow: hidden;}
+.rankTab>li{padding: 10px 15px; border-bottom: 3px solid #fff; float: left; color: #999;}
+.rankTab>li.cur{border-color: #e8512e;}
+.rankListC>h1>i{display: inline-block; width: 18px; height: 18px; background: url(../images/wo-clock.png) no-repeat 0 0; background-size: 18px 18px; float: left; margin-right: 5px;}
+.rankList>li{background-color: #fff; padding: 10px 0; margin-bottom: 10px; overflow: hidden;}
+.rankList>li>h1{line-height: 20px; padding: 0 15px 10px; font-size: 14px;}
+.rankList>li>h1>span{display: inline-block;; background-color: #e8512e; width: 20px; line-height: 20px; height: 20px; text-align: center; margin-right: 5px; border-radius: 10px; color: #fff;}
+.rankData{text-align: center;}
+.rankCom{padding: 10px 0 5px;}
+.rankCom>div{padding: 3px; line-height: 12px; color: #999;}
+.rankCom>div:last-child{text-align: left;}
+.rankCom>div:first-child{text-align: right;}
+.rankData p:first-child{font-size: 12px; color: #999;}
+.rankData p:last-child{font-size: 14px;}
+.rankCom .process>div{background-color: #23d1d0;}

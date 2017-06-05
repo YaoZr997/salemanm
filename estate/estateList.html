@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/point.css">
+<style type="text/css">
+.serObjList>li{border:0;}
+.serObj{background-color: #f8f8f8;margin: 0 -15px;padding: 0 10px;}
+.serObj>a{padding: 5px 0;line-height: 32px;}
+.serObjPoint{border:0;}
+.serObjPoint+.serObjPoint{border-top: 1px solid #ddd;margin-top: 10px;}
+</style>
+<title>小区列表</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">小区列表</div>
+      <div class="col-xs-2">
+        <!-- <a href="javascript:void(0)" class="add fr">
+          <img src="images/add.png" height="24" alt="">
+        </a> -->
+      </div>
+    </header>
+    <section class="container marginT">
+      <div class="iTab" id="Examine">
+        <div class="col-xs-6 col-sm-6 cur">小区基本信息</div>
+        <div class="col-xs-6 col-sm-6">本网信息</div>
+      </div>
+      <div id="xq">
+        <ul class="serObjList">
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="PointSerObjDet.html"><img src="images/estate.png" height="32" alt="" class="fl">翡翠城</a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow four"><span>楼栋数：</span>39栋</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow four"><span>总户数：</span>1299户</div>
+                </div>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow seven"><span>资源是否覆盖：</span>是</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow five"><span>接入方式：</span>光纤</div>
+                </div>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="dataRow three"><span>地址：</span>杭州市余杭区西溪湿地以西约2公里</div>
+              </div>
+            </div>
+          </li> 
+        </ul>
+      </div>
+      <div id="bw">
+        <ul class="serObjList">
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="PointSerObjDet.html"><img src="images/estate.png" height="32" alt="" class="fl">翡翠城</a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="dataRow six"><span>宽带利用率：</span>80%</div>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow six"><span>本网用户数：</span>480</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow six"><span>到期用户数：</span>26</div>
+                </div>
+              </div>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

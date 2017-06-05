@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/point.css">
+<style type="text/css">
+.serObjList>li{border:0;}
+.serObj{background-color: #f8f8f8;margin: 0 -15px;padding: 0 10px;}
+.serObj>a{background: none;padding: 5px 0;line-height: 32px;position: relative;overflow: visible;}
+.serObj>a>span{position:absolute;right:-10px;top:11px;display: inline-block;color: #fff;background-color: #ec4d73;font-size: 12px;padding: 0 10px;border-bottom-left-radius: 10px;border-top-left-radius: 10px;-webkit-border-bottom-left-radius: 10px;-webkit-border-top-left-radius: 10px;line-height: 20px;}
+.serObj>a>span.targetUser{background-color: #56c8c8;}
+.serObjPoint{border:0;}
+.serObjPoint+.serObjPoint{border-top: 1px solid #ddd;margin-top: 10px;}
+.iTabSelector{position: relative;}
+.iTabSelector>select{position: absolute;left: 0;top: 0;width: 100%;height: 100%;opacity: 0;z-index: 2;}
+.iTabSelector>span{display: inline-block;color: #777;position: relative;padding-right: 20px;background: url(images/arrow-bottom.png) right center no-repeat;background-size: 12px 8px;}
+</style>
+<title>住户列表</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-8">1栋住户列表</div>
+      <div class="col-xs-2">
+        <a href="javascript:void(0)" class="add fr">
+          <img src="images/add.png" height="24" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="container marginT">
+      <div class="iTab" id="Examine">
+        <div class="col-xs-6 col-sm-6 iTabSelector">
+          <span>网络类型</span>
+          <select name="" id="">
+            <option value="">网络类型</option>
+            <option value="">类型1</option>
+            <option value="">类型2</option>
+            <option value="">类型3</option>
+          </select>
+        </div>
+        <div class="col-xs-6 col-sm-6 iTabSelector">
+          <span>用户类型</span>
+          <select name="" id="">
+            <option value="">网络类型</option>
+            <option value="">类型1</option>
+            <option value="">类型2</option>
+            <option value="">类型3</option>
+          </select>
+        </div>
+      </div>
+      <div class="houseList" id="houseList">
+        <ul class="serObjList">
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="PointSerObjDet.html"><img src="images/estateHouse.png" height="32" alt="" class="fl">1栋1单元101<span class="targetUser">目标用户</span></a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow three"><span>户主：</span>张三</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow three"><span>电话：</span>18623288123</div>
+                </div>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow five"><span>宽带类型：</span>联通</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow five"><span>用户类型：</span>本网用户</div>
+                </div>
+              </div>
+            </div>
+            <div class="operate">
+              <div class="col-xs-4 col-sm-4"><a href="tel://15700107071"><img src="images/wo-chuli.png" alt="" height="24">编辑</a></div>
+              <div class="col-xs-4 col-sm-4"><img src="images/No.png" alt="" height="24">删除</div>
+              <div class="col-xs-4 col-sm-4"><img src="images/wo-chuli.png" alt="" height="24">转化</div>
+            </div>
+          </li> 
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="PointSerObjDet.html"><img src="images/estateHouse.png" height="32" alt="" class="fl">1栋1单元101<span>潜在用户</span></a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow three"><span>户主：</span>张三</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow three"><span>电话：</span>18623288123</div>
+                </div>
+              </div>
+              <div class="serObjPoint clearfix">
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow five"><span>宽带类型：</span>联通</div>
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                  <div class="dataRow five"><span>用户类型：</span>本网用户</div>
+                </div>
+              </div>
+            </div>
+            <div class="operate">
+              <div class="col-xs-4 col-sm-4"><a href="tel://15700107071"><img src="images/wo-chuli.png" alt="" height="24">编辑</a></div>
+              <div class="col-xs-4 col-sm-4"><img src="images/No.png" alt="" height="24">删除</div>
+              <div class="col-xs-4 col-sm-4"><img src="images/wo-chuli.png" alt="" height="24">转化</div>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

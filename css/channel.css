@@ -1,0 +1,10 @@
+﻿.channelDetail{margin-bottom: 10px;}
+.channelDetail .glyphicon{color: #e8512e; font-size: 20px; padding: 6px;margin-left: 6px;}
+.channelDetail h5{line-height: 32px;font-size: 12px;border-left: 3px solid #e8512e;padding-left:12px;padding-right:10px;border-bottom: 1px solid #ddd; color: #e8512e;}
+.channel{padding: 15px;}
+.channel>h1,.channel>a>h1{line-height: 30px;font-size: 14px;}
+.channel>h1>p,.channel>a>h1>p{padding-left: 10px; overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+.channel>a{display: block; padding-right: 15px; background: url(../images/arrow-right.png) no-repeat right center; background-size: 8px 15px;}
+.channelVisit{border-left: 1px solid #ddd;margin-left: 15px; margin-top: 2px; padding-top: 10px;}
+.channelVisit>li{color:#999;padding-left: 25px; background: url(../images/stepPoint.png) no-repeat left top; background-size: 20px 20px; position: relative; left: -10px; margin-bottom: 10px;}
+.channelVisit>li:last-child{margin: 0;}

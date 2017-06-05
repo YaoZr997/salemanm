@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/point.css">
+<title>搜索</title>
+<style type="text/css">
+  .searchC{padding:8px; padding-left:44px;border-bottom:1px solid #bbb;position: fixed;left: 0;top: 0; width: 100%;z-index: 99;background: #f0f0f0;}
+  .searchC .form-control{background-color:#fff;height:28px; border-radius:17px; text-align:center;color: #999;}
+  .noResult{text-align:center; font-size:16px; color:#999;margin-top:50px; font-size: 12px;}
+  .noResult img{margin:0 auto 15px;}
+  .serObjList>li{border: 0;padding-bottom: 0;}
+  .serObjList>li:first-child{margin-top: 0;}
+  .serObj>a{padding: 10px 0 5px 0;}
+  .listGroup>li>a{padding-left: 40px;}
+  .pointYyy{border: 0;padding: 0;}
+  .pointYyy>li{padding-bottom: 5px;padding-top: 5px;}
+  .pointYyy>li p{line-height: 20px;}
+  .serObjPoint{padding-top: 0;}
+  .serObjList{margin-bottom: 10px;}
+  .resultUser{background-image: url(images/contacts-head.png);background-size: 30px 30px !important;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="searchC">
+      <a href="javascript:void(0)" class="goBack abs" style="top:0;left:0;">
+        <img src="images/arrow-right.png" height="24" alt="" style="transform:rotate(180deg);-webkit-transform:rotate(180deg);">
+      </a>
+      <input type="text" class="form-control" placeholder="搜索">
+      <a href="javascript:void(0)" class="search abs" style="right:8px; top:2px;z-index:99;">
+        <img src="images/searchDark.png" width="20" alt="">
+      </a>
+    </div>
+    <section class="container" style="margin-top:45px;">
+      <div class="noResult clearfix" id="noResult">
+        <div class="col-xs-4 col-sm-4">
+          <a href="javascript:void(0)">
+            <img src="images/search-wo.png" width="50%" alt="">
+            <p>工单</p>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-4">
+          <a href="javascript:void(0)">
+            <img src="images/search-wo.png" width="50%" alt="">
+            <p>用户</p>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-4">
+          <a href="javascript:void(0)">
+            <img src="images/search-wo.png" width="50%" alt="">
+            <p>积分</p>
+          </a>
+        </div>
+      </div>
+      <div class="result" id="result" style="display:none;">
+        <ul class="serObjList">
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="javascript:void(0)">工单</a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <ul class="ulist pointYyy">
+                  <li>
+                    <i class="pointTypeIcon"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="pointTypeIcon"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="pointTypeIcon"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li> 
+        </ul>
+        <ul class="serObjList">
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="javascript:void(0)">用户</a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <ul class="ulist pointYyy">
+                  <li>
+                    <i class="pointTypeIcon resultUser"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="pointTypeIcon resultUser"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="pointTypeIcon resultUser"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li> 
+        </ul>
+        <ul class="serObjList">
+          <li>
+            <div class="pointWgSer">
+              <div class="serObj clearfix">
+                <a href="javascript:void(0)">用户</a>
+              </div>
+              <div class="serObjPoint clearfix">
+                <ul class="ulist pointYyy">
+                  <li>
+                    <i class="pointTypeIcon"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="pointTypeIcon"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="pointTypeIcon"></i>
+                    <div class="col-xs-12 col-sm-12">
+                      <p>用户号码：13101020102</p>
+                      <p>用户名：安山东</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('.search').click(function(){
+      $('#noResult').hide();
+      $('#result').show();
+    })
+  })
+</script>
+</body>
+</html>
